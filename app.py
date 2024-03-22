@@ -22,10 +22,12 @@ def generate_qr_code(url, fill_color, bg_color):
     return img
 
 st.header("QR Code Generator")
-st.subheader("สำหรับท่านสมาชิกเท่านั้น")
+st.subheader("เมื่อท่านได้รับหมายเลขบัตรแล้วเท่าน้ัน")
+st.text( "กรอก ชื่อ..นามสกุล..สังกัด..โทร..หมายเลขบัตร")
+st.text( "// จุดสองจุดต้องใส่แทนเว้นวรรค //")
 
 # Get the URL input from the user
-url = st.text_input("กรอก ชื่อ..นามสกุล..สังกัด..โทร.. * จุดสองจุดต้องใส่แทนเว้นวรรค *")
+url = st.text_input("Name..Team..Phone")
 
 # Allow the user to choose a color pair
 color_pair = st.selectbox("Select a color pair:", list(color_pairs.keys()))
