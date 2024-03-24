@@ -24,7 +24,7 @@ def generate_qr_code(url, fill_color, bg_color):
 st.header("QR Code Generator")
 st.subheader("เมื่อท่านได้รับหมายเลขบัตรแล้วเท่าน้ัน")
 st.text( "กรอก ชื่อ..นามสกุล..สังกัด..โทร..หมายเลขบัตร")
-st.text( "// จุดสองจุดต้องใส่แทนเว้นวรรค //")
+st.text( "// จุดสองจุดต้องใส่แทน ทุกเว้นวรรค //")
 
 # Get the URL input from the user
 url = st.text_input("Name..Team..Phone")
