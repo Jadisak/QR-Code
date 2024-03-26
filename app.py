@@ -24,10 +24,11 @@ def generate_qr_code(url, fill_color, bg_color):
 # st.header("E-Ticket Registration")
 st.markdown('## E-Ticket :orange[Registration]')
 st.divider()
-st.markdown('#### เฉพาะท่านที่ได้รับ :green[หมายเลขบัตร] แล้วเท่าน้ัน')
-st.markdown('- :red[ช่องกรอก] ชื่อ, นามสกุล, สังกัด, โทร, หมายเลขบัตร ช่องว่างต้อง :red[เว้นวรรค]')
-st.markdown('- :red[ไม่ต้องมีคำนำหน้า] นาย/นาง, :red[ต้องมีขีด]-ระหว่างเลขโทร :red[000-000-0000]') 
-st.markdown('- หน้า :orange[หมายเลขบัตร] ต้องใส่ - :red[# นำหน้า]')
+st.markdown('#### เฉพาะท่านมี :orange[หมายเลขบัตร] เท่าน้ัน')
+st.markdown('- :red[ชื่อ, นามสกุล,] ต้อง :red[เว้นวรรค] หลังชื่อ, ไม่มีคำนำหน้า :red[นาย / นาง]')
+st.markdown('- :red[สังกัด] ภาค, หน่วย, (ต้องใส่ :red[-] :gray[ระหว่างเลข])')
+st.markdown('- :red[โทร.] ต้องมีขีด - ระหว่างเลข :red[000-000-0000]')
+st.markdown('- :red[หมายเลขบัตร] ต้องใส่ -- :red[#] --นำหน้า')
 
 # Get the URL input from the user
 url = st.text_input("QR Code Generator")
@@ -62,4 +63,4 @@ st.divider()
 
 md = st.text_area('ให้กดปุ่ม :red[ดาวน์โหลด]',
                   'ให้บันทึกและเก็บติดตัวเป็น E-Ticket เพื่อนำไปสแกนที่หน้างาน '
-                  )
+                  ) 
