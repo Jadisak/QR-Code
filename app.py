@@ -21,14 +21,13 @@ def generate_qr_code(url, fill_color, bg_color):
     img = qr.make_image(fill_color=fill_color, back_color=bg_color)
     return img
 
-# st.header("E-Ticket Registration")
 st.markdown('## E-Ticket :orange[Registration]')
 st.divider()
 st.markdown('#### เฉพาะท่านมี :orange[หมายเลขบัตร] เท่าน้ัน')
 st.markdown('- :red[ชื่อ, นามสกุล,] ต้อง :red[เว้นวรรค] หลังชื่อ, ไม่มีคำนำหน้า :red[นาย / นาง]')
 st.markdown('- :red[สังกัด] ภาค, หน่วย  :red[-0909], (ต้องใส่ :red[-] :gray[หน้าเลข])')
-st.markdown('- :red[โทร.] ต้องมีขีด :red[-] ระหว่างเลข :red[098-765-4321]')
-st.markdown('- :red[หมายเลขบัตร] ต้องใส่เครื่องหมาย  :red[#] นำหน้า')
+st.markdown('- :red[โทร.(ไม่ต้องมี)]  ต้องมีขีด  :red[-] ระหว่างเลข :red[098-765-4321]')
+st.markdown('- :red[ หมายเลขบัตร] ต้องใส่เครื่องหมาย  :red[#] นำหน้า')
 st.divider()
 
 # Get the URL input from the user
