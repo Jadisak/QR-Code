@@ -26,9 +26,10 @@ st.markdown('## E-Ticket :orange[Registration]')
 st.divider()
 st.markdown('#### เฉพาะท่านมี :orange[หมายเลขบัตร] เท่าน้ัน')
 st.markdown('- :red[ชื่อ, นามสกุล,] ต้อง :red[เว้นวรรค] หลังชื่อ, ไม่มีคำนำหน้า :red[นาย / นาง]')
-st.markdown('- :red[สังกัด] ภาค, หน่วย, (ต้องใส่ :red[-] :gray[ระหว่างเลข])')
-st.markdown('- :red[โทร.] ต้องมีขีด - ระหว่างเลข :red[000-000-0000]')
-st.markdown('- :red[หมายเลขบัตร] ต้องใส่ -- :red[#] --นำหน้า')
+st.markdown('- :red[สังกัด] ภาค, หน่วย  :red[-0909], (ต้องใส่ :red[-] :gray[หน้าเลข])')
+st.markdown('- :red[โทร.] ต้องมีขีด :red[-] ระหว่างเลข :red[098-765-4321]')
+st.markdown('- :red[หมายเลขบัตร] ต้องใส่  :red[-] นำหน้า')
+st.divider()
 
 # Get the URL input from the user
 url = st.text_input("QR Code Generator")
